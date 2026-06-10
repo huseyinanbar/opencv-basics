@@ -36,4 +36,3 @@ This repository contains my OpenCV and Computer Vision practice projects.
 ### Image Pyramids
 - Gaussian Pyramid
 - Laplacian Pyramid
-- 
