@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("parmakizi.png", 0)
+image = cv2.imread("resim.png", 0)
 
 ret1,thresh1 = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY) # simple threshold
 ret2,thresh2 = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)

@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("tren.png")
+image = cv2.imread("resim1.png")
 
 gauss_filter = cv2.GaussianBlur(image, (5,5),0)
 cv2.imshow("original", image)

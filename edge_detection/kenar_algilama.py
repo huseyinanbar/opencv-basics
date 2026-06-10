@@ -1,14 +1,14 @@
 import cv2
 import numpy
 
-image = cv2.imread("kurtresmi.png")
+image = cv2.imread("resim1.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(gray,(5,5),0) # blurlama işlemini arttırarak algılanan kenarlar azaltılabilir
 
 def auto_canny(blur, sigma = 0.33): # fonksiyon oluşturma
-    median = numpy.median(blur) # piksel yoğunluklarının medianı hesaplanır
+    median = numpy.median(blur) # piksel yoğunluklarının medyanını hesaplanır
     lower = int(max(0,(1.0 - sigma)*median)) # alt eşik değeri
-    upper = int(min(255, (1.0 + sigma) * median))  # alt eşik değeri
+    upper = int(min(255, (1.0 + sigma) * median))  # üst eşik değeri
     canny = cv2.Canny(blur, 250, 50)  # kenar algılama
 
     return canny

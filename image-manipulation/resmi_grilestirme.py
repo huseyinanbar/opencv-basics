@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-resim = cv2.imread("kurtresmi.png")
+resim = cv2.imread("resim1.png")
 gri_resim = cv2.cvtColor(resim, cv2.COLOR_BGR2GRAY)
 
 yukseklik, genislik, kanal_sayisi = resim.shape

@@ -3,7 +3,7 @@ import numpy as np
 
 from morphological_operations import erosion
 
-image = cv2.imread("yazı.png")
+image = cv2.imread("resim1.png")
 
 kernel = np.ones((5,5),np.uint8)
 erosion = cv2.erode(image, kernel, iterations = 1) # aşınma işlemi yapılıyor
