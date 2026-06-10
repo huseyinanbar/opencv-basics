@@ -1,6 +1,6 @@
 import cv2
 
-image = cv2.imread("tren.png")
+image = cv2.imread("resim1.png")
 
 medianfilter = cv2.medianBlur(image,9) # belirlediğimiz matristeki hücrelerin medyanı alınır ve orta matrise yerleştirilir
 medianfilter2 = cv2.medianBlur(image,1)
