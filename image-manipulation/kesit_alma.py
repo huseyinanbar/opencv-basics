@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-resim = cv2.imread("kurtresmi.png")
+resim = cv2.imread("resim1.png")
 
 kesit = resim[500:1500,400:1600] # resim[] şeklinde belirtilen piksellerden kesit oluşturur
 cv2.imshow("kesit", kesit)
