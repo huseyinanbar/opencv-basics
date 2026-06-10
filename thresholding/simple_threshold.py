@@ -3,7 +3,7 @@ görüntünün görmek istediğimiz yerine göre işlermler yapıyoruz'''
 
 import cv2
 
-image = cv2.imread("resim.png", 0)
+image = cv2.imread("resim1.png", 0)
 
 ret, thresh1 = cv2.threshold(image,127,255,cv2.THRESH_BINARY) # (127,255) değerleri arasındaysa 0 değerine yuvarla
 ret, thresh2 = cv2.threshold(image,127,255, cv2.THRESH_BINARY_INV) # (127,255) değerleri arasındaysa 1 değerine yuvarla
