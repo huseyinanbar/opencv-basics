@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-resim = cv2.imread("resim1.png")
+resim = cv2.imread("resim.png")
 
 cv2.rectangle(resim, (2400, 1500), (2500, 1300), [0, 0, 255], 2) #dikdörtgen oluşturur
 
