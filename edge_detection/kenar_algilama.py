@@ -1,7 +1,7 @@
 import cv2
 import numpy
 
-image = cv2.imread("resim1.png")
+image = cv2.imread("resim.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blur = cv2.GaussianBlur(gray,(5,5),0) # blurlama işlemini arttırarak algılanan kenarlar azaltılabilir
 
